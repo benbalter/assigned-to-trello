@@ -19,3 +19,9 @@ You must set the following environmental variables:
 1. Clone this repo locally
 2. `script/bootstrap`
 3. `bundle exec rake trello_token`
+
+## Deployment
+
+The app can be deployed to Heroku using the button above.
+
+You'll need to add the free "Scheduler" add on, and 

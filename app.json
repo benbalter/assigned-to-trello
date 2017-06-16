@@ -1,4 +1,35 @@
 {
   "name": "Assign to Trello",
-  "description": "Creates cards on a designated Trello board any time you're assigned an issue on GitHub."
+  "description": "Creates cards on a designated Trello board any time you're assigned an issue on GitHub.",
+  "addons": [
+    "scheduler:standard"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ],
+  "env": {
+    "TRELLO_BOARD_ID": {
+      "description": "In the URL for the board after `/b/`",
+      "required": true
+    },
+    "TRELLO_LIST_NAME": {
+      "description": "The column name, e.g., 'To do'",
+      "required": true
+    },
+    "GITHUB_TOKEN": {
+      "description": "A [GitHub personal access token](https://github.com/settings/tokens/new) with `repo` or `public_repo` scope",
+      "required": true
+    },
+    "TRELLO_PUBLIC_KEY": {
+      "description": "The Trello Developer API key. Run `bundle exec rake trello_token` to retrieve.",
+      "required": true
+    },
+    "TRELLO_MEMBER_TOKEN": {
+      "description": "The Trello member token. Run `bundle exec rake trello_token` to retrieve.",
+      "required": true
+    }
+  },
+  "repository": "https://github.com/benbalter/assigned-to-trello"
 }
