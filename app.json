@@ -1,0 +1,4 @@
+{
+  "name": "Assign to Trello",
+  "description": "Creates cards on a designated Trello board any time you're assigned an issue on GitHub."
+}
