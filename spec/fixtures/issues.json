@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Issue with card",
+    "html_url": "https://github.com/foo/bar/issues/1"
+  },
+  {
+    "title": "Issue without card",
+    "html_url": "https://github.com/foo/bar/issues/2"
+  }
+]

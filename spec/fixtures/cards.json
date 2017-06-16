@@ -1,0 +1,10 @@
+[
+  {
+    "id": "card-with-attachment",
+    "name": "Card with attachment"
+  },
+  {
+    "id": "card-without-attachment",
+    "name": "Card without attachment"
+  }
+]

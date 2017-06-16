@@ -1,0 +1,10 @@
+[
+  {
+    "name": "https://github.com/foo/bar/issues/1",
+    "url": "https://github.com/foo/bar/issues/1",
+    "id": "foo-bar-1",
+    "bytes": 0,
+    "date": "2017-01-01",
+    "isUpload": false
+  }
+]

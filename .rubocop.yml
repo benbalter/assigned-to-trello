@@ -1,0 +1,11 @@
+Metrics/LineLength:
+  Exclude:
+    - spec/**/*
+
+Lint/HandleExceptions:
+  Exclude:
+    - Rakefile
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
