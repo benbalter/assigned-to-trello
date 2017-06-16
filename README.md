@@ -2,6 +2,8 @@
 
 Creates cards on a designated Trello board any time you're assigned an issue on GitHub.
 
+[![Build Status](https://travis-ci.org/benbalter/assigned-to-trello.svg?branch=master)](https://travis-ci.org/benbalter/assigned-to-trello)
+
 ## Configuration
 
 You must set the following environmental variables:
