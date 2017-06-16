@@ -1,1 +1,1 @@
-cron: bundle exec rake run
+cron: bundle exec rake cron

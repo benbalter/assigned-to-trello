@@ -7,7 +7,7 @@ begin
 rescue LoadError
 end
 
-task :run do
+task :cron do
   Dotenv.load
 
   Trello.configure do |config|
