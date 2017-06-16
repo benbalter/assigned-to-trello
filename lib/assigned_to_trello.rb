@@ -40,12 +40,14 @@ class AssignedToTrello
   end
 
   def create_card_from_issue(issue)
+    Trello.logger.debug "Creating card for #{issue.title}"
     card = Trello::Card.create(name: issue.title, list_id: list.id)
     card.add_attachment issue.html_url, issue.html_url
     card
   end
 
   def run
+    Trello.logger.debug "Found #{issues.count} issues assigned"
     issues.each do |issue|
       next if find_card_by_issue(issue)
       create_card_from_issue(issue)

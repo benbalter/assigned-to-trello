@@ -1,6 +1,7 @@
 require_relative '../lib/assigned_to_trello'
 require 'webmock/rspec'
 WebMock.disable_net_connect!
+Trello.logger.level = Logger::WARN
 
 RSpec.configure do |config|
   config.filter_run_when_matching :focus
