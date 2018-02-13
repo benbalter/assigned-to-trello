@@ -49,6 +49,7 @@ class AssignedToTrello
   def run
     Trello.logger.debug "Found #{issues.count} issues assigned"
     issues.each do |issue|
+      next if issue.title =~ /^Nagios/
       next if find_card_by_issue(issue)
       create_card_from_issue(issue)
     end
